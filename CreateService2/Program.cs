@@ -12,8 +12,8 @@ namespace CreateService2
             {
                 x.Service<MyService>(s =>
                 {
-                    s.WhenStarted(service => service.OnStart());
-                    s.WhenStopped(service => service.OnStop());
+                    s.WhenStarted(service => MyService.OnStart());
+                    s.WhenStopped(service => MyService.OnStop());
                     s.ConstructUsing(()   => new MyService());
 
                     s.ScheduleQuartzJob(q =>
@@ -40,11 +40,11 @@ namespace CreateService2
 
     public class MyService
     {
-        public void OnStart()
+        public static void OnStart()
         {
         }
 
-        public void OnStop()
+        public static void OnStop()
         {
         }
     }
