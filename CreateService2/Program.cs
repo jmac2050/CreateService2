@@ -31,9 +31,9 @@ namespace CreateService2
                     .StartAutomatically()
                     .EnableServiceRecovery(rc => rc.RestartService(1));
 
-                x.SetServiceName("My Topshelf Service");
-                x.SetDisplayName("My Topshelf Service");
-                x.SetDescription("My Topshelf Service's description");
+                x.SetServiceName("copySourceFile");
+                x.SetDisplayName("copySourceFile");
+                x.SetDescription("Copy file from source to target ...");
             });
         }
     }
