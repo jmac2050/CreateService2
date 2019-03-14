@@ -12,7 +12,7 @@ namespace CreateService2
             var pathSource  = Settings.Default.PathSource;
             var filePattern = Settings.Default.FilePattern;
             
-            Console.WriteLine($"[{DateTime.Now}] Welcome jmac2050 file has been copied ...");
+            Console.WriteLine($"[{DateTime.Now}] jmac2050 file has been successfully copied ...");
 
             var files = Directory.GetFiles(pathSource, filePattern);
 

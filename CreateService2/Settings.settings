@@ -14,5 +14,11 @@
     <Setting Name="Intervall" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">30</Value>
     </Setting>
+    <Setting Name="ServiceName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">copySourceFile</Value>
+    </Setting>
+    <Setting Name="ServiceDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Copy file from source to target ...</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

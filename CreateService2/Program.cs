@@ -31,9 +31,9 @@ namespace CreateService2
                     .StartAutomatically()
                     .EnableServiceRecovery(rc => rc.RestartService(1));
 
-                x.SetServiceName("copySourceFile");
-                x.SetDisplayName("copySourceFile");
-                x.SetDescription("Copy file from source to target ...");
+                x.SetServiceName(Settings.Default.ServiceName);
+                x.SetDisplayName(Settings.Default.ServiceName);
+                x.SetDescription(Settings.Default.ServiceDescription);
             });
         }
     }

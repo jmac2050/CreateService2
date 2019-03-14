@@ -70,5 +70,29 @@ namespace CreateService2 {
                 this["Intervall"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("copySourceFile")]
+        public string ServiceName {
+            get {
+                return ((string)(this["ServiceName"]));
+            }
+            set {
+                this["ServiceName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Copy file from source to target ...")]
+        public string ServiceDescription {
+            get {
+                return ((string)(this["ServiceDescription"]));
+            }
+            set {
+                this["ServiceDescription"] = value;
+            }
+        }
     }
 }
